@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>new</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .chartMenu {
+        width: 100vw;
+        height: 40px;
+        background: #1A1A1A;
+        color: rgba(54, 162, 235, 1);
+      }
+      .chartMenu p {
+        padding: 10px;
+        font-size: 20px;
+      }
+      .chartCard {
+        width: 100vw;
+        height: calc(100vh - 40px);
+        background: rgba(54, 162, 235, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #chartBox {
+        width: 700px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgba(54, 162, 235, 1);
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chartMenu">
+     
+    </div>
+    <div class="chartCard">
+      <div id="chartBox">
+
+        
+   <!--<p>Nestle milk: 150-->
+       
+      </div>
+    </div>
+   
+    <script>
+   
+      const products = [
+        {
+            id: 1,
+            brand: 'nestle milk',
+            price: 10.0,
+            quantity: '1 liter'
+
+        },
+        {
+            id: 2,
+            brand: 'fresh cow milk',
+            price: 1.50,
+            quantity: '2 liter'
+
+        },
+        {
+            id: 3,
+            brand: 'milo milk',
+            price: 5.0,
+            quantity: '500 ml'
+
+        },
+        {
+            id: 4,
+            brand: 'water bottle ',
+            price: 1.00,
+            quantity: '500 ml'
+
+        },
+      ];
+
+     // console.log(products)
+
+     const chartBox = document.getElementById
+     ('chartBox');
+
+     console.log(chartBox);
+
+   
+            products.forEach((product, index) => {
+
+            let itemHR = document.createElement('HR')
+
+            let itemp = document.createElement('p');
+
+            let itempText = document.createTextNode(`${product.brand}: Rs${product.price} `);
+
+            itemp.appendChild(itempText);
+
+
+            chartBox.appendChild(itemp);
+chartBox.appendChild(itemHR);
+          
+    //console.log('ID: '+ product.brand) 
+})
+
+     </script>
+
+  </body>
+
+  </html>
+
