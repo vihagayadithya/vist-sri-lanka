@@ -86,3 +86,51 @@ class {
 
 .tourist-spot 
 {font-size: 17px;}
+
+
+
+*,.flag {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(221, 239, 255);
+  display: grid;
+  place-items: center;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+h3 {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+}
+
+/* Main Style Stars from here  */
+.flag {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.sri_lanka {
+  padding: 20px;
+  background-color: #ffbe29;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.left__box {
+  width: 78px;
+  height: 100%;
+  background: linear-gradient(to right, #00534e 50%, #eb7400 0);
+}
+.sri_lanka__logo {
+  width: 180px;
+  height: 160px;
+}
